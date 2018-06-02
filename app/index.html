@@ -12,12 +12,28 @@
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/brandon-codegrounds.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCsEUxizLSCNbTvPLQhqte1dQYuN7PKqt4",
+        authDomain: "brandon-codegrounds.firebaseapp.com",
+        databaseURL: "https://brandon-codegrounds.firebaseio.com",
+        projectId: "brandon-codegrounds",
+        storageBucket: "brandon-codegrounds.appspot.com",
+        messagingSenderId: "144204466824"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/brandon-codegrounds.js"></script>
